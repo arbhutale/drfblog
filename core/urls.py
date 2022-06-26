@@ -4,6 +4,7 @@ from rest_framework.schemas import get_schema_view
 from rest_framework.documentation import include_docs_urls
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework_swagger.views import get_swagger_view
 
 urlpatterns = [
     # Oauth
@@ -18,6 +19,7 @@ urlpatterns = [
 
     # API schema and Documentation
     path('project/docs/', include_docs_urls(title='BlogAPI')),
+    path('swag', get_swagger_view(title='Pastebin API')),
     path('project/schema', get_schema_view(
         title="BlogAPI",
         description="API for the BlogAPI",

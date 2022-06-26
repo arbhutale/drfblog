@@ -46,6 +46,7 @@ toml = "*"
 uritemplate = "*"
 urllib3 = "*"
 Pillow = "*"
+django-rest-swagger = "*"
 
 
 [requires]

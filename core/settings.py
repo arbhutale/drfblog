@@ -1,6 +1,5 @@
 from pathlib import Path
 from datetime import timedelta
-import os
 import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'apuvicmef^(!j8gx&clu0u(!8m0r^etok^l0)kc!---#(i5=dt'
@@ -24,6 +23,7 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'social_django',
     'drf_social_oauth2',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [

@@ -45,6 +45,7 @@ sqlparse = "*"
 toml = "*"
 uritemplate = "*"
 urllib3 = "*"
+Pillow = "*"
 
 
 [requires]

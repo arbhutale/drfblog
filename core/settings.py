@@ -1,11 +1,11 @@
 from pathlib import Path
 from datetime import timedelta
-import django_heroku
+# import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'apuvicmef^(!j8gx&clu0u(!8m0r^etok^l0)kc!---#(i5=dt'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'rest_framework',
@@ -72,8 +72,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ezvrwwwm',
+        'USER' : 'ezvrwwwm',
+        'PASSWORD' : '0CV9gbzYzGRJCYwAcwh6oE8YQaR4zWMq',
+        'HOST' : 'satao.db.elephantsql.com',
+        # 'PORT' : '5452',
     }
 }
 
@@ -175,4 +181,4 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
 SOCIAL_AUTH_USER_FIELDS = ['email', 'username', 'first_name', 'password']
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())

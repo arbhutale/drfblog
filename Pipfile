@@ -48,6 +48,7 @@ urllib3 = "*"
 Pillow = "*"
 django-rest-swagger = "*"
 pyyaml = "*"
+psycopg2 = "*"
 
 
 [requires]

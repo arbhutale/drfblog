@@ -47,6 +47,7 @@ uritemplate = "*"
 urllib3 = "*"
 Pillow = "*"
 django-rest-swagger = "*"
+pyyaml = "*"
 
 
 [requires]
